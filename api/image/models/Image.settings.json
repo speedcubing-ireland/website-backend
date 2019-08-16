@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "images",
+  "info": {
+    "name": "image",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

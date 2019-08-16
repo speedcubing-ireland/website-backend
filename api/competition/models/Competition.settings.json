@@ -1,0 +1,43 @@
+{
+  "connection": "default",
+  "collectionName": "competitions",
+  "info": {
+    "name": "competition",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "startdate": {
+      "required": true,
+      "type": "date"
+    },
+    "enddate": {
+      "required": true,
+      "type": "date"
+    },
+    "registrationopen": {
+      "type": "boolean"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "wcalink": {
+      "required": true,
+      "type": "string"
+    }
+  }
+}

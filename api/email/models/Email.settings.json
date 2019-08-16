@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "emails",
+  "info": {
+    "name": "email",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "email": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "connection": "default",
+  "collectionName": "articles",
+  "info": {
+    "name": "article",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "required": true,
+      "type": "text",
+      "unique": true
+    },
+    "type": {
+      "enum": [
+        "announcement",
+        "results",
+        "news"
+      ],
+      "type": "enumeration",
+      "default": "announcement",
+      "required": true
+    },
+    "author": {
+      "type": "string",
+      "default": "Speedcubing Ireland Team",
+      "required": true
+    }
+  }
+}
