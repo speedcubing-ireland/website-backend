@@ -15,7 +15,9 @@
   },
   "attributes": {
     "image": {
-      "type": "string",
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
       "required": true
     },
     "description": {
