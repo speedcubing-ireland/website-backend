@@ -29,14 +29,12 @@
     "registrationopen": {
       "type": "boolean"
     },
-    "image": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": true
-    },
     "wcalink": {
       "required": true,
+      "type": "string"
+    },
+    "image": {
+      "default": "URL For Image",
       "type": "string"
     }
   }
