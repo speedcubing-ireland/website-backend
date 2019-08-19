@@ -7,14 +7,17 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
     "comment": ""
   },
   "attributes": {
     "description": {
       "type": "string"
     },
-    "image": {
+    "photo": {
       "default": "URL For Image",
       "type": "string"
     }
