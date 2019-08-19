@@ -14,13 +14,13 @@
     "comment": ""
   },
   "attributes": {
-    "image": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": true
-    },
     "description": {
+      "type": "string"
+    },
+    "image": {
+      "unique": true,
+      "default": "URL For Image",
+      "required": true,
       "type": "string"
     }
   }
