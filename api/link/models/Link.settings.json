@@ -1,0 +1,18 @@
+{
+  "connection": "default",
+  "collectionName": "links",
+  "info": {
+    "name": "link",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "post": {
+      "type": "text"
+    }
+  }
+}
